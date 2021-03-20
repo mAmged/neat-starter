@@ -1,60 +1,44 @@
-# Neat Starter
+# Vredeburg
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1d36fc9-4471-4679-902c-337449ccb59d/deploy-status)](https://app.netlify.com/sites/vredeburg/deploys)
 
-Starter Template for **N**etlify CMS, **E**leventy, **A**lphine JS & **T**ailwind CSS
+A simple starter project to create a blog using Eleventy and Tailwind CSS
 
-## Live Demo
+<details>
+  <summary>Screenshot</summary>
+  
+  ![](https://i.imgur.com/wGj2YZD.jpg)
+</details>
 
-[https://neat-starter.netlify.app/](https://neat-starter.netlify.app/)
-
-### Technologies used:
-
-- [Netlify CMS](https://www.netlifycms.org/)
-- [Eleventy](https://www.11ty.dev/)
-- [Alpine.js](https://github.com/alpinejs/alpine)
-- [Tailwind CSS](https://tailwindcss.com/)
-
-| ![image](https://user-images.githubusercontent.com/1884712/93762662-a62e4700-fc2d-11ea-9b2c-fda9f503402b.png) |
-| ------------------------------------------------------------------------------------------------------------- |
-
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+See demo [here](https://vredeburg.netlify.app)!
 
 ## Getting Started
-
-Detailed instructions are available in my blog. [Check it out](https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss)
-
-### 1\. Clone this Repository
-
+1. Clone this repository
+```bash
+git clone https://github.com/dafiulh/vredeburg.git blog-name
 ```
-git clone https://github.com/surjithctly/neat-starter.git
+2. Navigate to the directory
+```bash
+cd blog-name
 ```
-
-### 2\. Navigate to the directory
-
-```
-cd neat-starter
-```
-
-### 3\. Install dependencies
-
-```
+3. Install dependencies
+```bash
 npm install
 ```
 
-### 4\. Build the project to generate the first CSS
-
-This step is only required the very first time.
-
+### Use in development
+```bash
+npm start
 ```
+
+### Build for production
+```bash
 npm run build
 ```
 
-### 5\. Run Eleventy
-
+### For debugging purposes
+```bash
+npm run debug
 ```
-npm run start
-```
 
-## Author
-
-Surjith S M ( [@surjithctly](https://surjithctly.in/) )
+## Configuration
+To change the title, description, author data, menu/nav item, etc, go to `src/_data/`.
