@@ -9,6 +9,9 @@ module.exports = (config) => {
 
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
+  config.addPassthroughCopy({
+    "./src/admin/config.yml": "./admin/config.yml",
+  });
 
   config.addWatchTarget("src/assets/js/");
 
@@ -24,7 +27,7 @@ module.exports = (config) => {
   config.addCollection('tagList', require('./lib/collections/tagList'));
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
-
+  
   return {
     dir: {
       input: 'src',
